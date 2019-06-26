@@ -1,0 +1,136 @@
+:root {
+  --star48-on-image: {
+    background-image: image-set(
+      url("./img/star48_on@2x.png") 2x,
+      url("./img/star48_on@3x.png") 3x
+    );
+  };
+
+  --star48-half-image: {
+    background-image: image-set(
+      url("./img/star48_half@2x.png") 2x,
+      url("./img/star48_half@3x.png") 3x
+    );
+  };
+
+  --star48-off-image: {
+    background-image: image-set(
+      url("./img/star48_off@2x.png") 2x,
+      url("./img/star48_off@3x.png") 3x
+    );
+  };
+
+  --star36-on-image: {
+    background-image: image-set(
+      url("./img/star36_on@2x.png") 2x,
+      url("./img/star36_on@3x.png") 3x
+    );
+  };
+
+  --star36-half-image: {
+    background-image: image-set(
+      url("./img/star36_half@2x.png") 2x,
+      url("./img/star36_half@3x.png") 3x
+    );
+  };
+
+  --star36-off-image: {
+    background-image: image-set(
+      url("./img/star36_off@2x.png") 2x,
+      url("./img/star36_off@3x.png") 3x
+    );
+  };
+
+  --star24-on-image: {
+    background-image: image-set(
+      url("./img/star24_on@2x.png") 2x,
+      url("./img/star24_on@3x.png") 3x
+    );
+  };
+
+  --star24-half-image: {
+    background-image: image-set(
+      url("./img/star24_half@2x.png") 2x,
+      url("./img/star24_half@3x.png") 3x
+    );
+  };
+
+  --star24-off-image: {
+    background-image: image-set(
+      url("./img/star24_off@2x.png") 2x,
+      url("./img/star24_off@3x.png") 3x
+    );
+  };
+}
+
+@c mStar {
+  @d wrap {
+    font-size: 0;
+    .star_item {
+      display: inline-block;
+      background-repeat: no-repeat;
+    }
+    &.star-48 {
+      .star_item {
+        width: 20px;
+        height: 20px;
+        margin-right: 22px;
+        background-size: 20px 20px;
+        &:last-child {
+          margin-right: 0;
+        }
+        &.on {
+          @apply --star48-on-image;
+        }
+        &.half {
+          @apply --star48-half-image;
+        }
+        &.off {
+          @apply --star48-off-image;
+        }
+      }
+    }
+    &.star-36 {
+      .star_item {
+        width: 15px;
+        height: 15px;
+        margin-right: 6px;
+        background-size: 15px 15px;
+        &:last-child {
+          margin-right: 0;
+        }
+        &.on {
+          @apply --star36-on-image;
+        }
+        &.half {
+          @apply --star36-half-image;
+        }
+        &.off {
+          @apply --star36-off-image;
+        }
+      }
+    }
+    &.star-24 {
+      .star_item {
+        width: 10px;
+        height: 10px;
+        margin-right: 3px;
+        background-size: 10px 10px;
+        &:last-child {
+          margin-right: 0;
+        }
+        &.on {
+          @apply --star24-on-image;
+        }
+        &.half {
+          @apply --star24-half-image;
+        }
+        &.off {
+          @apply --star24-off-image;
+        }
+      }
+    }
+
+  }
+
+}

@@ -1,0 +1,216 @@
+:root {
+  --decrease_1-image: {
+    background-image: image-set(
+      url("./img/decrease_1@2x.png") 2x,
+      url("./img/decrease_1@3x.png") 3x
+    );
+  };
+
+  --discount_1-image: {
+    background-image: image-set(
+      url("./img/discount_1@2x.png") 2x,
+      url("./img/discount_1@3x.png") 3x
+    );
+  };
+
+  --special_1-image: {
+    background-image: image-set(
+      url("./img/special_1@2x.png") 2x,
+      url("./img/special_1@3x.png") 3x
+    );
+  };
+
+  --invoice_1-image: {
+    background-image: image-set(
+      url("./img/invoice_1@2x.png") 2x,
+      url("./img/invoice_1@3x.png") 3x
+    );
+  };
+
+  --guarantee_1-image: {
+    background-image: image-set(
+      url("./img/guarantee_1@2x.png") 2x,
+      url("./img/guarantee_1@3x.png") 3x
+    );
+  };
+
+  --decrease_2-image: {
+    background-image: image-set(
+      url("./img/decrease_2@2x.png") 2x,
+      url("./img/decrease_2@3x.png") 3x
+    );
+  };
+
+  --discount_2-image: {
+    background-image: image-set(
+      url("./img/discount_2@2x.png") 2x,
+      url("./img/discount_2@3x.png") 3x
+    );
+  };
+
+  --special_2-image: {
+    background-image: image-set(
+      url("./img/special_2@2x.png") 2x,
+      url("./img/special_2@3x.png") 3x
+    );
+  };
+
+  --invoice_2-image: {
+    background-image: image-set(
+      url("./img/invoice_2@2x.png") 2x,
+      url("./img/invoice_2@3x.png") 3x
+    );
+  };
+
+  --guarantee_2-image: {
+    background-image: image-set(
+      url("./img/guarantee_2@2x.png") 2x,
+      url("./img/guarantee_2@3x.png") 3x
+    );
+  };
+
+  --decrease_3-image: {
+    background-image: image-set(
+      url("./img/decrease_3@2x.png") 2x,
+      url("./img/decrease_3@3x.png") 3x
+    );
+  };
+
+  --discount_3-image: {
+    background-image: image-set(
+      url("./img/discount_3@2x.png") 2x,
+      url("./img/discount_3@3x.png") 3x
+    );
+  };
+
+  --special_3-image: {
+    background-image: image-set(
+      url("./img/special_3@2x.png") 2x,
+      url("./img/special_3@3x.png") 3x
+    );
+  };
+
+  --invoice_3-image: {
+    background-image: image-set(
+      url("./img/invoice_3@2x.png") 2x,
+      url("./img/invoice_3@3x.png") 3x
+    );
+  };
+
+  --guarantee_3-image: {
+    background-image: image-set(
+      url("./img/guarantee_3@2x.png") 2x,
+      url("./img/guarantee_3@3x.png") 3x
+    );
+  };
+
+  --decrease_4-image: {
+    background-image: image-set(
+      url("./img/decrease_4@2x.png") 2x,
+      url("./img/decrease_4@3x.png") 3x
+    );
+  };
+
+  --discount_4-image: {
+    background-image: image-set(
+      url("./img/discount_4@2x.png") 2x,
+      url("./img/discount_4@3x.png") 3x
+    );
+  };
+
+  --special_4-image: {
+    background-image: image-set(
+      url("./img/special_4@2x.png") 2x,
+      url("./img/special_4@3x.png") 3x
+    );
+  };
+
+  --invoice_4-image: {
+    background-image: image-set(
+      url("./img/invoice_4@2x.png") 2x,
+      url("./img/invoice_4@3x.png") 3x
+    );
+  };
+
+  --guarantee_4-image: {
+    background-image: image-set(
+      url("./img/guarantee_4@2x.png") 2x,
+      url("./img/guarantee_4@3x.png") 3x
+    );
+  };
+
+}
+
+@c mSupportTypeIcon {
+  @d wrap {
+    .icon {
+      display: inline-block;
+      vertical-align: top;
+      background-repeat: no-repeat;
+
+      &.decrease_1 {
+        @apply  --decrease_1-image;
+      }
+      &.discount_1 {
+        @apply  --discount_1-image;
+      }
+      &.special_1 {
+        @apply  --special_1-image;
+      }
+      &.invoice_1 {
+        @apply  --invoice_1-image;
+      }
+      &.guarantee_1 {
+        @apply  --guarantee_1-image;
+      }
+
+      &.decrease_2 {
+        @apply  --decrease_2-image;
+      }
+      &.discount_2 {
+        @apply  --discount_2-image;
+      }
+      &.special_2 {
+        @apply  --special_2-image;
+      }
+      &.invoice_2 {
+        @apply  --invoice_2-image;
+      }
+      &.guarantee_2 {
+        @apply  --guarantee_2-image;
+      }
+
+      &.decrease_3 {
+        @apply  --decrease_3-image;
+      }
+      &.discount_3 {
+        @apply  --discount_3-image;
+      }
+      &.special_3 {
+        @apply  --special_3-image;
+      }
+      &.invoice_3 {
+        @apply  --invoice_3-image;
+      }
+      &.guarantee_3 {
+        @apply  --guarantee_3-image;
+      }
+
+      &.decrease_4 {
+        @apply  --decrease_4-image;
+      }
+      &.discount_4 {
+        @apply  --discount_4-image;
+      }
+      &.special_4 {
+        @apply  --special_4-image;
+      }
+      &.invoice_4 {
+        @apply  --invoice_4-image;
+      }
+      &.guarantee_4 {
+        @apply  --guarantee_4-image;
+      }
+    }
+  }
+}

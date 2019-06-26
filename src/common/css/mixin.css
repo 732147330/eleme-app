@@ -1,0 +1,38 @@
+:root {
+  --color: rgba(117, 117, 127, 0.1);
+  --border-bottom: {
+    position: relative;
+    &:after {
+      display: block;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      border-bottom: 1px solid var(--color);
+      content: ' ';
+    }
+  };
+
+  --border-none: {
+    &:after {
+      display: none;
+    }
+  };
+
+  --brand-image: {
+    background-image: image-set(
+      url("../resource/img/brand@2x.png") 2x,
+      url("../resource/img/brand@3x.png") 3x
+    );
+  };
+  --bulletin-image: {
+    background-image: image-set(
+      url("../resource/img/bulletin@2x.png") 2x,
+      url("../resource/img/bulletin@3x.png") 3x
+    );
+  };
+
+
+}
+
+

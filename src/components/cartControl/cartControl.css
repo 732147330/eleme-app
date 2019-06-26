@@ -1,0 +1,32 @@
+@c cartControl {
+  @d wrap {
+    font-size: 0;
+    .inner {
+      display: inline-block;
+      .decrease {
+        display: inline-block;
+        padding: 6px;
+        line-height: 24px;
+        font-size: 24px;
+        color: rgb(0, 160, 220);
+      }
+    }
+    .count {
+      display: inline-block;
+      vertical-align: top;
+      width: 12px;
+      padding-top: 12px;
+      line-height: 10px;
+      text-align: center;
+      font-size: 10px;
+      color: rgb(147, 153, 159);
+    }
+    .add {
+      display: inline-block;
+      padding: 6px;
+      line-height: 24px;
+      font-size: 24px;
+      color: rgb(0, 160, 220);
+    }
+  }
+}

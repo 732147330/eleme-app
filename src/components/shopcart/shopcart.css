@@ -108,10 +108,13 @@
         left: 32px;
         bottom: 22px;
         z-index: 200;
-        width: 16px;
-        height: 16px;
-        border-radius: 50%;
-        background: rgb(0, 160, 220);
+        .inner {
+          width: 16px;
+          height: 16px;
+          border-radius: 50%;
+          transition: all .3s linear;
+          background: rgb(0, 160, 220);
+        }
       }
     }
   }

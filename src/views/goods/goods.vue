@@ -26,7 +26,7 @@
                   span(class="now") ¥{{food.price}}
                   span(v-show="food.oldPrice", class="old") ¥{{food.oldPrice}}
                 div(class="cartControl_wrapper")
-                  cart-control(:food="food", @addCart="addCart($event)")
+                  cart-control(:food="food", @add-cart="addCart($event)")
     shopcart(ref="shopcart", :selectFoods="selectFoods", :deliveryPrice="seller.deliveryPrice", :minPrice="seller.minPrice")
 </template>
 
@@ -95,8 +95,8 @@
         let element  = this.foodsList[index];
         this.foodsScroll.scrollToElement(element, 300);
       },
-      addCart($event) {
-        this.ballDrop($event.target);
+      addCart(event) {
+        this.ballDrop(event.target);
       },
       ballDrop(target) {
         this.$refs.shopcart._drop(target);

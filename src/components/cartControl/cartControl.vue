@@ -21,13 +21,16 @@
       }
     },
     methods: {
-      addCart($event) {
+      addCart(event) {
         if(!this.food.count) {
           Vue.set(this.food, 'count', 1);
         }else {
           this.food.count++;
         }
-        this.$emit('addCart', $event)
+        // if (!event._constructed) return // 检测事件派发是否来自于better-scroll
+        this.$nextTick(() => {
+          this.$emit('add-cart', event);
+        });
       },
       decreaseCart() {
         if(this.food.count) {
